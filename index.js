@@ -5,7 +5,7 @@ const exIcon = document.querySelector("form .reverse");
 const amount = document.querySelector("form input");
 const exRateTxt = document.querySelector("form .result");
 
-const API_KEY = require("./apikey.js");
+import API_KEY from "./apikey.js";
 
 [fromCur, toCur].forEach((select, i) => {
     for (let curCode in Country_List) {
